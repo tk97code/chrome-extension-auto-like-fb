@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .like-btn{
+            transition: 0.2s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: whitesmoke;
+            background-color: #2e86de;
+            border: none;
+            outline: none;
+            padding: 5px 10px;
+            margin-top: -10px;
+            margin-left: 9px;
+            margin-bottom: 15px;
+            min-width: 90%;
+        }
+        .like-btn:hover{
+            transition: 0.2s;
+            margin-top: -10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            transform: scaleX(1.1) scaleY(1.05);
+            background-color: #feca57;
+            color: #2e86de;
+            border: none;
+            outline: none;
+        }
+        .like-btn:active{
+            background-color: whitesmoke;
+        }
+
+
+        .unlike-btn{
+            transition: 0.2s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: whitesmoke;
+            background-color: #2e86de;
+            border: none;
+            outline: none;
+            padding: 5px 10px;
+            margin-top: -20px;
+            margin-left: 9px;
+            min-width: 90%;
+        }
+        .unlike-btn:hover{
+            transition: 0.2s;
+            margin-top: -20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            transform: scaleX(1.1) scaleY(1.05);
+            background-color: #feca57;
+            color: #2e86de;
+            border: none;
+            outline: none;
+        }
+        .unlike-btn:active{
+            background-color: whitesmoke;
+        }
+
+
+        #txt{
+            text-align: center;
+            font-size: 15px;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+<body style="width: 200px">
+    <p id="txt">Tìm thấy <b id="number_like" style="font-size: 17px;">x</b> mục có thể like</p>
+    <button class="like-btn" id="like-btn">Like Ngay và luôn</button>
+    <button class="unlike-btn" id="unlike-btn">Unlike toàn bộ</button>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/popup.js"></script>
+</body>
+</html>

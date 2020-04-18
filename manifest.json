@@ -1,0 +1,31 @@
+{
+    
+    "manifest_version": 2,
+    "name": "Facebook Auto Like",
+    "version": "1.0",
+  
+    
+    "description": "A tool auto like in Facebook \n Code By 00110101 00110100 00110011 00110110",
+    "icons": {  "16": "icon.png",
+                "48": "icon.png",
+                "128": "icon.png" },
+  
+    
+    "author": "DevGuide",
+    "browser_action": {
+        "default_icon": {                    
+          "16": "icon.png",           
+          "24": "icon.png",           
+          "32": "icon.png"            
+        },
+        "default_title": "Facebook Auto Like",      
+        "default_popup": "popup/popup.html"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["*://*.facebook.com/*","*://facebook.com/*"],
+          "js": ["popup/JS/jquery.js","popup/JS/content.js"]
+        }
+      ]
+}
